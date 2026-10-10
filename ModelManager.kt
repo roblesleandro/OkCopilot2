@@ -8,7 +8,7 @@ import java.util.zip.ZipInputStream
 
 /** Descarga y descomprime el modelo de voz de Vosk (~40 MB) la primera vez. */
 object ModelManager {
-    private const val MODEL_NAME = "vosk-model-small-es-0.42"
+    private const val MODEL_NAME = "vosk-model-small-en-us-0.15"
     private const val MODEL_URL = "https://alphacephei.com/vosk/models/$MODEL_NAME.zip"
 
     private fun baseDir(ctx: Context) = File(ctx.filesDir, "model")

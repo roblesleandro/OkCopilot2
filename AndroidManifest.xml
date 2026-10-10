@@ -9,12 +9,9 @@
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
 
-    <!-- Para ver y abrir las apps instaladas (Android 11+) -->
+    <!-- Para poder detectar y abrir la app de Copilot (Android 11+) -->
     <queries>
-        <intent>
-            <action android:name="android.intent.action.MAIN" />
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent>
+        <package android:name="com.microsoft.copilot" />
     </queries>
 
     <application
@@ -36,18 +33,5 @@
             android:name=".WakeWordService"
             android:exported="false"
             android:foregroundServiceType="microphone" />
-
-        <service
-            android:name=".AutoClickService"
-            android:exported="true"
-            android:label="OK Copilot (toques automáticos)"
-            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
-            <intent-filter>
-                <action android:name="android.accessibilityservice.AccessibilityService" />
-            </intent-filter>
-            <meta-data
-                android:name="android.accessibilityservice"
-                android:resource="@xml/accessibility_config" />
-        </service>
     </application>
 </manifest>

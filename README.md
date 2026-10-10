@@ -28,9 +28,3 @@ Reconocimiento de voz 100% offline con [Vosk](https://alphacephei.com/vosk/) (mo
 - No se inicia sola al reiniciar el teléfono (Android 14+ no permite iniciar micrófono en segundo plano al arrancar): abrí la app y tocá Iniciar.
 - Escuchar siempre consume algo de batería.
 - Algunas marcas (Xiaomi, Samsung, Huawei) tienen ajustes extra de "autoinicio"/"apps en suspensión": agregá OK Copilot como excepción.
-
-## Versión 2
-- Modelo de voz en **español**.
-- **Comandos configurables**: frase → app (por defecto "copilot" → Microsoft 365 Copilot si está instalada).
-- **"abrir <app>"** abre cualquier app instalada.
-- **Aprender toque** (requiere activar accesibilidad): la app recuerda qué botón tocaste y lo aprieta sola al abrirla por voz (ej. el botón de voz de Copilot).
